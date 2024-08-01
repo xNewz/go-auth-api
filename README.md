@@ -15,6 +15,31 @@ This is a simple API built with Golang that uses JWT and OAuth2 for user authent
   - Admin Access: Access admin-specific functionalities by sending a GET request to `/admin`. Admin privileges required.
   - Edit User Role: Update a user’s role by sending a PUT request to `/admin/edit-role/:user_id`. Admin privileges required.
 
+## Directory Structure
+```plaintext
+.
+├── Dockerfile                # Dockerfile for building the API image
+├── README.md                 # This file
+├── docker-compose.yml        # Docker Compose configuration
+├── go.mod                    # Go module dependencies
+├── go.sum                    # Go module checksum
+├── handlers                  # Directory containing HTTP handlers
+│   ├── admin.go              # Admin-related handler functions
+│   ├── auth.go               # Authentication-related handler functions
+│   └── oauth.go              # OAuth-related handler functions
+├── main.go                   # Entry point of the application
+├── middlewares               # Directory containing middleware functions
+│   └── jwt.go                # JWT authentication middleware
+├── models                    # Directory containing data models
+│   └── user.go               # User data model
+├── tmp                       # Temporary files (e.g., build logs)
+│   ├── build-errors.log      # Log file for build errors
+│   └── main                  # Compiled binary (if any)
+└── utils                     # Directory containing utility functions
+    ├── database.go           # Database connection utilities
+    └── hash.go               # Hashing utilities
+```
+
 ## Endpoints
 
 ### User Registration
