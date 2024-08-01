@@ -53,7 +53,7 @@ This is a simple API built with Golang that uses JWT and OAuth2 for user authent
   - Request Body: { "role": "admin" }
   - Description: Update a user’s role. Requires admin privileges.
 
-### Environment Variables
+## Environment Variables
 
 The application uses the following environment variables:
 
