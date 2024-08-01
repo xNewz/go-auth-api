@@ -77,7 +77,27 @@ GOOGLE_REDIRECT_URL=your_google_redirect_url
 ALLOW_ORIGINS=your_allow_origins
 ```
 
-## Setup
+## Docker Setup
+
+### Using Docker Compose
+
+1. Build and Start the Application with Docker Compose
+
+```bash
+docker-compose up --build
+```
+
+This command will build the Docker image and start the containers for both the Go API and MongoDB. The API will be accessible at http://localhost:3000.
+
+### Docker Commands
+
+- Start the services: docker-compose up
+- Start services in the background: docker-compose up -d
+- Stop services: docker-compose down
+- View logs: docker-compose logs
+- Rebuild services: docker-compose build
+
+## Local Setup
 
 1. Clone the Repository
 
@@ -101,6 +121,8 @@ go run main.go
 ```
 
 5. Access the API
-The API will be running on http://localhost:3000. You can interact with the endpoints using tools like Postman or curl.
+   The API will be running on http://localhost:3000. You can interact with the endpoints using tools like Postman or curl.
 
 ## Enjoy the API! 🚀
+
+Feel free to adjust any specifics or add more details as needed!
